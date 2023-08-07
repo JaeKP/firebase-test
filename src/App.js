@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello, World :)</p>
+        <p>ENV: {process.env.REACT_APP_ENV}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
