@@ -8,15 +8,18 @@ jobs:
     if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Generate Environment Variables File for Production
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+      - name: 🏗 Setup Environment Variables
         run: echo "REACT_APP_ENV=$REACT_APP_ENV" >> .env
         env:
           REACT_APP_ENV: ${{ vars.REACT_APP_ENV }}
-      - name: Install Dependencies and Build
+      - name: 📦 Install Dependencies and Build
         run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: 🚀 Deploy!
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_TEST_4CD96 }}"
           projectId: fir-test-4cd96
+          expires: 2d

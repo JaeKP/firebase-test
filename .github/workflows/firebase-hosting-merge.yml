@@ -10,14 +10,20 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Generate Environment Variables File for Production
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+      - name: 🏗 Setup Environment Variables
         run: echo "REACT_APP_ENV=$REACT_APP_ENV" >> .env
         env:
           REACT_APP_ENV: ${{ vars.REACT_APP_ENV }}
-      - name: Install Dependencies and Build
+      - name: 📦 Install Dependencies and Build
         run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: 🔍 Check Lint
+        run: npm run lint
+      - name: 🔍 Test
+        run: num run test
+      - name: 🚀 Deploy!
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_TEST_4CD96 }}"
