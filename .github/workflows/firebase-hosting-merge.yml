@@ -13,7 +13,8 @@ jobs:
       - name: Setup repo 🏗
         uses: actions/checkout@v3
       - name: Setup Environment Variables 🏗
-        run: echo "REACT_APP_ENV=$REACT_APP_ENV" >> .env
+        run: |
+          echo "REACT_APP_ENV=$REACT_APP_ENV" >> .env
         env:
           REACT_APP_ENV: ${{ vars.REACT_APP_ENV }}
       - name: Install Dependencies and Build 📦

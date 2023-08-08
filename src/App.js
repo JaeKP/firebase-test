@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import packageInfo from "../package.json";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello, World :)</p>
         <p>ENV: {process.env.REACT_APP_ENV}</p>
+        <p>Ver.{packageInfo.version}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
