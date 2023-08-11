@@ -31,7 +31,9 @@ jobs:
           channelId: live
           projectId: fir-test-4cd96
       - name: Fetch tags  📁
-        run: git fetch --tags
+        run: |
+          git fetch --tags
+          git push --tags
       - name: Manage Versions 📁
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
