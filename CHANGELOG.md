@@ -1,3 +1,19 @@
+# v1.1.0 (Fri Aug 11 2023)
+
+#### 🚀 Enhancement
+
+- Test [#26](https://github.com/JaeKP/firebase-test/pull/26) ([@JaeKP](https://github.com/JaeKP))
+
+#### 🐛 Bug Fix
+
+- Feat Home page [#23](https://github.com/JaeKP/firebase-test/pull/23) ([@JaeKP](https://github.com/JaeKP))
+
+#### Authors: 1
+
+- coco ([@JaeKP](https://github.com/JaeKP))
+
+---
+
 # v1.0.2 (Fri Aug 11 2023)
 
 #### 🐛 Bug Fix
