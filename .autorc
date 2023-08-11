@@ -1,13 +1,6 @@
 {
-  "plugins": [
-    "git-tag",
-    "all-contributors",
-    "released",
-    "slack"
-  ],
   "owner": "JaeKP",
   "repo": "firebase-test",
   "name": "coco",
-  "email": "worudp12@gmail.com",
-  "onlyPublishWithReleaseLabel": true
+  "email": "worudp12@gmail.com"
 }
