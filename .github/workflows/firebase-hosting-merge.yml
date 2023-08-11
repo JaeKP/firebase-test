@@ -30,7 +30,9 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_TEST_4CD96 }}"
           channelId: live
           projectId: fir-test-4cd96
-      - name: Versionning 📝
+      - name: Fetch tags  📁
+        run: git fetch --tags
+      - name: Manage Versions 📁
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run release
