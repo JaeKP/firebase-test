@@ -1,3 +1,15 @@
+# v1.1.1 (Fri Aug 11 2023)
+
+#### 🐛 Bug Fix
+
+- temp [#28](https://github.com/JaeKP/firebase-test/pull/28) ([@JaeKP](https://github.com/JaeKP))
+
+#### Authors: 1
+
+- coco ([@JaeKP](https://github.com/JaeKP))
+
+---
+
 # v1.1.0 (Fri Aug 11 2023)
 
 #### 🚀 Enhancement
