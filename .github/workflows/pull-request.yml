@@ -1,0 +1,21 @@
+name: CI on PR
+"on":
+  pull_request:
+jobs:
+  build_and_lint:
+    if: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref != 'test'  }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup repo 🏗
+        uses: actions/checkout@v3
+      - name: Setup Environment Variables 🏗
+        run: |
+          echo "REACT_APP_ENV=$REACT_APP_ENV" >> .env
+        env:
+          REACT_APP_ENV: ${{ vars.REACT_APP_ENV }}
+      - name: Install Dependencies and Build 📦
+        run: npm ci && npm run build
+      - name: Check Lint 🔍
+        run: npm run lint
+      - name: Test 🔍
+        run: npm run test
