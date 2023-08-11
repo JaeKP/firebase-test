@@ -1,9 +1,8 @@
-name: Buld Test and Lint on PR
+name: Check Build and Lint on PR
 "on":
   pull_request:
 jobs:
   build_and_lint:
-    if: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.base_ref != 'test'  }}"
     runs-on: ubuntu-latest
     steps:
       - name: Setup repo 🏗
