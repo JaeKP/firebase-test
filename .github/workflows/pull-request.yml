@@ -1,9 +1,9 @@
-name: CI on PR
+name: Buld Test and Lint on PR
 "on":
   pull_request:
 jobs:
   build_and_lint:
-    if: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref != 'test'  }}"
+    if: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.base_ref != 'test'  }}"
     runs-on: ubuntu-latest
     steps:
       - name: Setup repo 🏗
