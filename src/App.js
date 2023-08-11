@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello, World :)</p>
+        <p>Hello, World</p>
         <p>ENV: {process.env.REACT_APP_ENV}</p>
         <p>Ver.{packageInfo.version}</p>
         <a
