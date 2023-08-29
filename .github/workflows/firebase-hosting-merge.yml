@@ -27,6 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run release
   build_and_deploy:
+    needs: release
     runs-on: ubuntu-latest
     steps:
       - name: Setup repo 🏗
