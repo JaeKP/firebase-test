@@ -1,3 +1,15 @@
+# v2.0.0 (Tue Aug 29 2023)
+
+#### 💥 Breaking Change
+
+- Merge test to master [#35](https://github.com/JaeKP/firebase-test/pull/35) ([@JaeKP](https://github.com/JaeKP))
+
+#### Authors: 1
+
+- coco ([@JaeKP](https://github.com/JaeKP))
+
+---
+
 # v1.2.1 (Tue Aug 29 2023)
 
 #### 🐛 Bug Fix
