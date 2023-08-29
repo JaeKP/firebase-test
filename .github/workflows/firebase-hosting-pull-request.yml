@@ -20,6 +20,10 @@ jobs:
           REACT_APP_ENV: ${{ vars.REACT_APP_ENV }}
       - name: Install Dependencies and Build 📦
         run: npm ci && npm run build
+      - name: Check Lint 🔍
+        run: npm run lint
+      - name: Test 🔍
+        run: npm run test
       - name: Deploy! 🚀
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:

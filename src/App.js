@@ -8,7 +8,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello, World</p>
-        <p>변경 사항 ㅇㅅㅇ</p>
         <p>ENV: {process.env.REACT_APP_ENV}</p>
         <p>Ver.{packageInfo.version}</p>
         <a
