@@ -1,3 +1,16 @@
+# v1.2.1 (Tue Aug 29 2023)
+
+#### 🐛 Bug Fix
+
+- Merge test to master [#34](https://github.com/JaeKP/firebase-test/pull/34) ([@JaeKP](https://github.com/JaeKP))
+- Merge temp to test [#33](https://github.com/JaeKP/firebase-test/pull/33) ([@JaeKP](https://github.com/JaeKP))
+
+#### Authors: 1
+
+- coco ([@JaeKP](https://github.com/JaeKP))
+
+---
+
 # v1.2.0 (Tue Aug 29 2023)
 
 #### 🚀 Enhancement
